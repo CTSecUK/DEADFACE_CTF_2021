@@ -13,12 +13,13 @@ def get_flag():
     return u(flag).decode('utf-8')
 
 
-#print(f'The flag is: ')
+print(f'The flag is: ')
 ```
 
 At the moment this code never calls the **get_flag()** funtion. it just defines it.
 
 If we change the bottom line of code to `print(get_flag())`
+
 Then run the script we get....
 
 ## flagflag{0h-look-a-FlaG}
