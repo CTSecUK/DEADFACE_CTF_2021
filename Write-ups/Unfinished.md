@@ -16,9 +16,9 @@ def get_flag():
 #print(f'The flag is: ')
 ```
 
-at the moment tis code never calls the **get_flag()** funtion. it just defines it.
+At the moment this code never calls the **get_flag()** funtion. it just defines it.
 
 If we change the bottom line of code to `print(get_flag())`
-the runs the script we get....
+Then run the script we get....
 
 ## flagflag{0h-look-a-FlaG}
