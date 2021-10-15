@@ -4,7 +4,7 @@
 
 ## Details
 
-'''
+```python
 #!/usr/bin/env python3
 from binascii import unhexlify as u
 
@@ -14,8 +14,7 @@ def get_flag():
 
 
 #print(f'The flag is: ')
-
-'''
+```
 
 at the moment tis code never calls the **get_flag()** funtion. it just defines it.
 
