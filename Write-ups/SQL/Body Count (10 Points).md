@@ -1,6 +1,6 @@
 # Body Count
 
-![Category](http://img.shields.io/badge/Category-Programming-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-10-brightgreen?style=for-the-badge)
+![Category](http://img.shields.io/badge/Category-SQL-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-10-brightgreen?style=for-the-badge)
 
 ## Details
 
