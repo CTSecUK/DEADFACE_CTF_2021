@@ -1,5 +1,5 @@
 # Send in the Clowns
-![Category](http://img.shields.io/badge/Category-Steganography-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-00-brightgreen?style=for-the-badge)
+![Category](http://img.shields.io/badge/Category-Steganography-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-10-brightgreen?style=for-the-badge)
 
 ## Details
 
