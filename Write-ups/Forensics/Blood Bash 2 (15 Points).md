@@ -1,5 +1,5 @@
 # Blood Bash 2
-![Category](http://img.shields.io/badge/Category-Forensics-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-10-brightgreen?style=for-the-badge)
+![Category](http://img.shields.io/badge/Category-Forensics-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-15-brightgreen?style=for-the-badge)
 
 ## Details
 
