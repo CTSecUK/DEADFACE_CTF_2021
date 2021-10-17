@@ -1,4 +1,4 @@
-# Bload Bash
+# Blood Bash
 ![Category](http://img.shields.io/badge/Category-Forensics-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-10-brightgreen?style=for-the-badge)
 
 ## Details
