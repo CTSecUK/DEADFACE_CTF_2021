@@ -10,7 +10,9 @@ One of De Monne's employees had their personal Windows computer hacked by a memb
 > Example: `flag{WindowsXP_32_202110150900}`
 >
 > [Download File](https://tinyurl.com/wcekj3rt) (1.5GB; ~5GB after decompression)
+> 
 > SHA1: 293c3a2a58ed7b15a8454f6dcd8bec0773ba550e
+> 
 > Password: `d34df4c3`
 ---
 
