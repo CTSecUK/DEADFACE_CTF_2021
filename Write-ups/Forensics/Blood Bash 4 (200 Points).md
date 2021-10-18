@@ -13,7 +13,7 @@
 
 Connect to shell...
 
-Run: `la -al"`
+Run: `la -al`
 
 ```
 -output from ls command-
