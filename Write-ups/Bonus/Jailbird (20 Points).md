@@ -9,7 +9,7 @@
 
 --- 
 
-For this one we head over to the [Ghost Town.]https://ghosttown.deadface.io/ forum site mentioied in the Starter thread.
+For this one we head over to the [Ghost Town](https://ghosttown.deadface.io/) forum site mentioied in the Starter thread.
 
 On that site we find this thread [https://ghosttown.deadface.io/t/what-they-got-our-boy/80]https://ghosttown.deadface.io/t/what-they-got-our-boy/80.
 
