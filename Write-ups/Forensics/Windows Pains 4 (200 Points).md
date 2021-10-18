@@ -3,22 +3,25 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+> We want to see if any other machines are infected with this malware. Using the [memory dump file](https://tinyurl.com/wcekj3rt) from Window Pains, submit the SHA1 checksum of the malicious process.
+>
+> Submit the flag as `flag{SHA1 hash}`.
+>
+> **CAUTION:** Practice good cyber hygiene! Use an isolated VM to download/run the malicious process. While the malicious process is relatively benign, if you're using an insecurely-configured Windows host, it may be possible for someone to compromise your machine if they can reach you on the same network.
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
 
+Using Volatility3 we run `sudo python3 vol.py -f physmemraw windows.dumpfiles --pid 8081`
 
-print(f'The flag is: ')
+```
+-output here-
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+Next; `sha1sum file...........userinit.exe`
 
-If we change the bottom line of code to `print(get_flag())`
+```
+-output here-
+```
 
-Then run the script we get....
 
-## flagflag{0h-look-a-FlaG}
+## flag{__________________________________}
