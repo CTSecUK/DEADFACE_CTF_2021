@@ -22,4 +22,4 @@ If we change the bottom line of code to `print(get_flag())`
 
 Then run the script we get....
 
-## flagflag{0h-look-a-FlaG}
+## flag{0h-look-a-FlaG}
