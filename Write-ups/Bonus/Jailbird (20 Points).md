@@ -3,22 +3,23 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+It looks like authorities arrested a member of DEADFACE. But who was it?
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+Submit the member's username as the flag: flag{username}
+
+--- 
+
+For this one we head over to the [Ghost Town.]https://ghosttown.deadface.io/ forum site mentioied in the Starter thread.
+
+On that site we find this thread [https://ghosttown.deadface.io/t/what-they-got-our-boy/80]https://ghosttown.deadface.io/t/what-they-got-our-boy/80.
+
+The thread contains a link to an extenral news article about the arrest of **Donnel**
 
 
-print(f'The flag is: ')
-```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+Further Down another user (d34th) confirm who Donnel is;
 
-If we change the bottom line of code to `print(get_flag())`
+![image](https://user-images.githubusercontent.com/73170900/137734409-193328ed-e1da-4a2e-9a29-afd836fa5d99.png)
 
-Then run the script we get....
 
-## flagflag{0h-look-a-FlaG}
+## flag{dr.acula}
