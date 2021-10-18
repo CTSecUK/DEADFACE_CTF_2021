@@ -19,7 +19,7 @@ WHERE employees.city = "El Paso";
 The result of which is;
 
 ```
-------+
++--------------+
 | SUM(balance) |
 +--------------+
 |    877401.00 |
