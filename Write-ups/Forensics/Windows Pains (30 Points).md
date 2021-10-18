@@ -3,22 +3,16 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+One of De Monne's employees had their personal Windows computer hacked by a member of DEADFACE. The attacker managed to exploit a portion of a database backup that contains sensitive employee and customer PII.
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+>Inspect the memory dump and tell us the Windows Major Operating System Version, bit version, and the image date/time (UTC, no spaces or special characters). Submit the flag as `flag{OS_BIT_YYYYMMDDhhmmss}`.
+>
+> Example: `flag{WindowsXP_32_202110150900}`
+>
+> [Download File](https://tinyurl.com/wcekj3rt) (1.5GB; ~5GB after decompression)
+> SHA1: 293c3a2a58ed7b15a8454f6dcd8bec0773ba550e
+> Password: `d34df4c3`
+---
 
 
-print(f'The flag is: ')
-```
-
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
-
-If we change the bottom line of code to `print(get_flag())`
-
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{_______}
