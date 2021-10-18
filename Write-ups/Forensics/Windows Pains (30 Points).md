@@ -17,4 +17,13 @@ One of De Monne's employees had their personal Windows computer hacked by a memb
 ---
 
 
-## flag{_______}
+Using Volatility3  we run `sudo python3 vol.py -f physmemraw windows.info`
+
+```
+-output here-
+```
+
+Using this information we can assemble eth flag as;
+
+
+## flag{Windows10_64_DATE-TIME}
