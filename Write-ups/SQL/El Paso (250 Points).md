@@ -4,22 +4,29 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>The regional manager for the El Paso branch of De Monne Financial is afraid his customers might be targeted for further attacks. He would like you to find out the dollar value of all outstanding loan balances issued by employees who live in El Paso. Submit the flag as `flag{$#,###.##}`.
+>
+> Use the MySQL database dump from Body Count.
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+For this challenge we need to use an SQL JOIN to gather data from two tables, using the below query;
 
-
-print(f'The flag is: ')
+```
+SELECT SUM(balance) FROM loans INNER JOIN customers on customers.cust_id = loans.cust_id INNER JOIN employees on employees.employee_id = loans.employee_id
+WHERE employees.city = "El Paso";
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+The result of which is;
 
-If we change the bottom line of code to `print(get_flag())`
+```
+------+
+| SUM(balance) |
++--------------+
+|    877401.00 |
++--------------+
+1 row in set (0.002 sec)
+```
 
-Then run the script we get....
+So our flag is;
 
-## flagflag{0h-look-a-FlaG}
+## flag{$877,401.00}
