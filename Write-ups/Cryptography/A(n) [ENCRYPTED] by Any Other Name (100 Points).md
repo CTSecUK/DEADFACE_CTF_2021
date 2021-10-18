@@ -2,23 +2,35 @@
 ![Category](http://img.shields.io/badge/Category-Cryptography-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-100-brightgreen?style=for-the-badge)
 
 ## Details
+>An encrypted message from spookyboi has been intercepted by law enforcement, but it is encrypted with an unknown algorithm and an unknown password. We know that he likes to speak in riddles, so perhaps he gave a riddle to one of his cohorts so they would know how to decrypt the message. Discover the algorithm and password, then decrypt the message below. Enter the flag as flag{this-is-the-flag}.
+>
+>(Hint: We know that the message is encrypted with Electronic Code Book [ECB] cipher block mode, and we know that the password is in lower case.)
+>
+> 
+[View Message](https://tinyurl.com/4jcbrmud)
+---
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+The encrypted message is as follows;
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
-
-
-print(f'The flag is: ')
+```
+AmYiuw8WHXEpsgNZzGURwW7pXb6APcp7v4HWPzXirriOP3q3fFtCssImT5LR+edaN1k1+lBTbW1rjY/wZSIsPjmY2LOk2FuRBk9i0K25iolP5jtJBt+HyhWZ3EadYNNE24pG6o+znsseud9DIE3zaIObkMFBj6xsWVrhALpju4cJrQpoo74MlJ7cHURHkOC7cKdsMo5kdYA4CpHCEhljvfNSR82nM4Ee9HaVMO58/okaoAtfGadMZcLVadut5sJfVzLzzG0G+QLOAkD/qPtfixggtuDURXkHQ0m2KANEi/3+478bhPoX4AciR5DSRw5zvsuF9JFEu7UCa39KggeAIB0dayX2Ho7hCI2zWTAt+q1WKX8V55toBQd6wtA+fjAsNtLzuzMKhlg6bP7HIzSH8V81C+ocTcTLo5Ijy/ZKaQt7XcDmdRsPVJihQqMu5Pw+5BKbjVNsFL4dcNRfNr4dNQ==
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+The description mentions;
+> _"We know that he likes to speak in riddles, so perhaps he gave a riddle to one of his cohorts so they would know how to decrypt the message"_
 
-If we change the bottom line of code to `print(get_flag())`
+so we head back to the  [Ghost Town](https://ghosttown.deadface.io/) forum site, where we find the folowing [thread](https://ghosttown.deadface.io/t/hint-for-mort1cia/47) which contains this clue;
 
-Then run the script we get....
+![image](https://user-images.githubusercontent.com/73170900/137743217-1361b146-d1bf-47f9-924a-cfd3e46422f2.png)
 
-## flagflag{0h-look-a-FlaG}
+Now we can use an online tool to decrypte the message - [https://www.tools4noobs.com/online_tools/decrypt/](https://www.tools4noobs.com/online_tools/decrypt/)
+
+The Password/Key is: "a synonym of Spook, Spectre, Spirit, Phantasm" - for this I'd guess **ghost**
+
+The Algorithm: "a homonym of" - a homonym of ghost could be **Gost** which is and Algorithm option.
+
+Putting all these pieces tother we get;
+
+![image](https://user-images.githubusercontent.com/73170900/137744645-b57c7ae1-f3a2-484f-8313-9d48c702571e.png)
+
+## flag{the-USSR-is-the-GOST-with-the-MOST}
