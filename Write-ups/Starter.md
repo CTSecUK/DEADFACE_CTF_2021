@@ -14,6 +14,6 @@ One of our partners found a forum page where DEADFACE discusses their activity. 
 
 ---
 
-Looking at the bottom of the [Rules](https://deadface.ctfd.io/rules) page, we find our flag
+Looking at the bottom of the [Rules](https://deadface.ctfd.io/rules) page, we find our flag;
 
 ## flag{themz_the_ru1es}
