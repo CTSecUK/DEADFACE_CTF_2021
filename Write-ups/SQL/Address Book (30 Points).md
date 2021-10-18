@@ -56,7 +56,9 @@ MariaDB [demonne]> SELECT * from customers WHERE city = 'Vienna';
 
 However the thread also mentioned;
 > ***She*** actually gave them her info too! 
-and
+
+and...
+
 > ***She*** lives near the Vienna branch of De Monne 
 
 The only customer from the above list who is female is;
