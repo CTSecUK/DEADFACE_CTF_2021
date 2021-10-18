@@ -11,19 +11,38 @@
 > `bloodbash.deadface.io:22`
 ---
 
-Connect to shell...
-
-Run: `ls -R`
-
+First we connect to shell using the suplied credentials.
 ```
--output from ls command-
-```
-
-
-Then: `cat Documents/flag1.txt`
-
-```
--flag here-
+❯ ssh bl0ody_mary@bloodbash.deadface.io
+bl0ody_mary@bloodbash.deadface.io's password: 
+bl0ody_mary@16ef1481fce1:~$ 
 ```
 
-## flag{0h-look-a-FlaG}
+Next we run: `ls -R` and see the follwiwng;
+
+```
+bl0ody_mary@16ef1481fce1:~$ ls -R
+.:
+'De Monne Customer Portal.pdf'   Documents   Downloads   Music   Pictures   Videos
+
+./Documents:
+flag1.txt
+
+./Downloads:
+
+./Music:
+
+./Pictures:
+
+./Videos:
+```
+
+
+so we try reading the flag using: `cat Documents/flag1.txt`
+
+```
+flag{cd134eb8fbd794d4065dcd7cfa7efa6f3ff111fe}
+```
+
+## flag{cd134eb8fbd794d4065dcd7cfa7efa6f3ff111fe}
+
