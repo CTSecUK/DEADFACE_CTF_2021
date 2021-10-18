@@ -19,10 +19,15 @@ If we add a `.onion` extention and for like so `http:\\fkdgcbd7ctdqde5dhysmdgefr
 
 This site seems fairly innocuous and most of the links do not work, but looking at the page sorce we can see some linked javascript files.
 
+![image](https://user-images.githubusercontent.com/73170900/137818556-007168f5-2439-423a-867a-51f8686a94cc.png)
+
 Examininig thos we see one contains the following...
 
 ```
-flag
+document.cookie = "flag{N0m_nom_c0ok13S}";
+
 ```
 
-## flag{__________________________}
+So the flag is;
+
+## flag{N0m_nom_c0ok13S}
