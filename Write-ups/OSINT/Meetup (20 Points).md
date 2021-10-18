@@ -20,6 +20,6 @@ if we upload the Photo to Google and perfoma a Reverse image serach we see...
 
 ![image](https://user-images.githubusercontent.com/73170900/137819407-b21f6055-af3f-4b06-a67c-6175707948fc.png)
 
-Therefore th flag is;
+Therefore the flag is;
 
 ## flag{Eastern State Penitentiary}
