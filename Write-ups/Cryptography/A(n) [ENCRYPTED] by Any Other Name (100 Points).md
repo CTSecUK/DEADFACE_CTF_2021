@@ -25,9 +25,9 @@ so we head back to the  [Ghost Town](https://ghosttown.deadface.io/) forum site,
 
 Now we can use an online tool to decrypte the message - [https://www.tools4noobs.com/online_tools/decrypt/](https://www.tools4noobs.com/online_tools/decrypt/)
 
-The Password/Key is: _*"a synonym of Spook, Spectre, Spirit, Phantasm"*_ - for this I'd guess **ghost**
+The Password/Key is: _**"a synonym of Spook, Spectre, Spirit, Phantasm"**_ - for this I'd guess **ghost**
 
-The Algorithm: _*"a homonym of""*_ - a homonym of ghost could be **Gost** which is and Algorithm option.
+The Algorithm: _**"a homonym of"**_ - a homonym of ghost could be **Gost** which is and Algorithm option.
 
 Putting all these pieces tother we get;
 
