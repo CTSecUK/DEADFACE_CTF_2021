@@ -3,22 +3,18 @@ He Thrusts His Fists Against the Post
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+![image](https://user-images.githubusercontent.com/73170900/137745677-58c19926-95be-417a-95c0-bb690bb15c72.png)
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+> {ea-vetgaytereoreh-na}fan--wshbestpasslds-s-hm
+---
 
+Looking at the string it loks like we havestandard alphabet charctoers and even the {} curly braces for the flag, but they aren't in the right place.. 
+This makes me thing the string has been encoded using a transposition cipher.
 
-print(f'The flag is: ')
-```
+The name of the challenge along with the picture in the challenge details further points me towards a Rail Fence Cipher (a type of transposition cipher).
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+Using our old friend [CyberChef](https://gchq.github.io/CyberChef/#recipe=Rail_Fence_Cipher_Decode(4,74)&input=e2VhLXZldGdheXRlcmVvcmVoLW5hfWZhbi0td3NoYmVzdHBhc3NsZHMtcy1obQ) and with a bit of expirementation to find the correct Key and Offset, we find our flag;
 
-If we change the bottom line of code to `print(get_flag())`
+![image](https://user-images.githubusercontent.com/73170900/137747012-4017ccea-1498-4bdc-a6e3-6a20dbd0ad75.png)
 
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{and-yet-swears-he-observes-the-phantasms}
