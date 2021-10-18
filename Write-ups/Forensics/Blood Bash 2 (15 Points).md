@@ -3,22 +3,30 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>We've obtained access to a system maintained by bl0ody_mary. We believe bl0ody_mary stole a sensitive document and is storing it on her Linux machine. Search her system for any files relating to De Monne Financial.
+>
+> Username: `bl0ody_mary`
+> Password: `d34df4c3`
+>
+> `bloodbash.deadface.io:22`
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+Connect to shell...
 
+Run: `find / -name "demmone"`
 
-print(f'The flag is: ')
+```
+...
+..
+.
+-output from end of find command-
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
 
-If we change the bottom line of code to `print(get_flag())`
+Then: `cat Documents/.demone-info.txt`
 
-Then run the script we get....
+```
+-flag here-
+```
 
-## flagflag{0h-look-a-FlaG}
+## flag{0h-look-a-FlaG}
