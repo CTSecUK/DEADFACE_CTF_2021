@@ -4,22 +4,50 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>One of De Monne's database engineers is having issues rebuilding the production database. He wants to know the name of one of the foreign keys on the loans database table. Submit one foreign key name as the flag: `flag{foreign-key-name}` (can be ANY foreign key).
+>
+> Use the MySQL database dump from **Body Count**.
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+To find this information we need to look at the INFORMATION_SCHEMA database in mysql.
 
+Using the following query (Note the loans table specified in the WHERE clause of this query as specified in the challenege details);
 
-print(f'The flag is: ')
+```
+MariaDB [(none)]> SELECT
+    ->   TABLE_NAME,
+    ->   COLUMN_NAME,
+    ->   CONSTRAINT_NAME,
+    ->   REFERENCED_TABLE_NAME,
+    ->   REFERENCED_COLUMN_NAME
+    -> FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+    -> WHERE
+    ->   TABLE_NAME = 'loans';
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+This returns the following information;
 
-If we change the bottom line of code to `print(get_flag())`
+```
++------------+--------------+-----------------------+-----------------------+------------------------+
+| TABLE_NAME | COLUMN_NAME  | CONSTRAINT_NAME       | REFERENCED_TABLE_NAME | REFERENCED_COLUMN_NAME |
++------------+--------------+-----------------------+-----------------------+------------------------+
+| loans      | loan_id      | PRIMARY               | NULL                  | NULL                   |
+| loans      | cust_id      | fk_loans_cust_id      | customers             | cust_id                |
+| loans      | employee_id  | fk_loans_employee_id  | employees             | employee_id            |
+| loans      | loan_type_id | fk_loans_loan_type_id | loan_types            | loan_type_id           |
+| loans      | loan_id      | PRIMARY               | NULL                  | NULL                   |
+| loans      | cust_id      | fk_loans_cust_id      | customers             | cust_id                |
+| loans      | employee_id  | fk_loans_employee_id  | employees             | employee_id            |
+| loans      | loan_type_id | fk_loans_loan_type_id | loan_types            | loan_type_id           |
++------------+--------------+-----------------------+-----------------------+------------------------+
+8 rows in set (0.000 sec)
+```
 
-Then run the script we get....
+The relevent informationhere is in the `CONSTRAINT_NAME` column.
 
-## flagflag{0h-look-a-FlaG}
+Any one of the `Foreign Keys` can be submitted as the flag;
+
+
+## flag{fk_loans_cust_id}
+## flag{fk_loans_employee_id}
+## flag{fk_loans_loan_type_id}
