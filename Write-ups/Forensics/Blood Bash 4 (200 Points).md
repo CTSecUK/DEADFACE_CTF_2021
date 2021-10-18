@@ -3,22 +3,32 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>A sensitive file from De Monne was exfiltrated by mort1cia. It contains data relating to a new web portal they're creating for their consumers. Read the contents of the file and return the flag as `flag{flag_goes_here}`.
+>
+> Username: `bl0ody_mary`
+> Password: `d34df4c3`
+>
+> `bloodbash.deadface.io:22`
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+Connect to shell...
 
+Run: `la -al"`
 
-print(f'The flag is: ')
+```
+-output from ls command-
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+note `.pdf`
 
-If we change the bottom line of code to `print(get_flag())`
+Then: `base64 dsadsa.pdf`
 
-Then run the script we get....
+Copy Base64 encoded string from shell
 
-## flagflag{0h-look-a-FlaG}
+On you local machine past the b64 string into a file and save as `encoded`
+
+Then run `base64 -d encoded > file.pdf`
+
+Open the resulting pdf file in your favourite PDF viewer to see the flag;
+
+## flag{_____}
