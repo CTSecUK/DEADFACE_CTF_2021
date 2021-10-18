@@ -16,7 +16,7 @@ Looking at this thread we see;
 
 We can use this information to query the database for the likely victim. 
 
-Looking at the `customers` table using the command `describe customer;` we can see we have the following information available to us;
+Looking at the `customers` table using the command `describe customers;` we can see we have the following information available to us;
 
 ```
 MariaDB [demonne]> describe customers;
