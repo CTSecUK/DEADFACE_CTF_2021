@@ -20,7 +20,7 @@ Run: `ls -R`
 ```
 
 
-Then: `cat Documents.flag1.txt`
+Then: `cat Documents/flag1.txt`
 
 ```
 -flag here-
