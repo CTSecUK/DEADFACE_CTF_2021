@@ -8,10 +8,11 @@ He Thrusts His Fists Against the Post
 > {ea-vetgaytereoreh-na}fan--wshbestpasslds-s-hm
 ---
 
-Looking at the string it loks like we havestandard alphabet charctoers and even the {} curly braces for the flag, but they aren't in the right place.. 
-This makes me thing the string has been encoded using a transposition cipher.
+Looking at the string in the description, it looks like it has standard alphabet characters and even the {} curly braces for the flag, but they aren't in the right place.
 
-The name of the challenge along with the picture in the challenge details further points me towards a Rail Fence Cipher (a type of transposition cipher).
+This makes me thing the string has been encoded using a transposition cipher.?!
+
+The name of the challenge along with the picture in the challenge details further points me towards a **"Rail Fence Cipher"** (a type of transposition cipher).
 
 Using our old friend [CyberChef](https://gchq.github.io/CyberChef/#recipe=Rail_Fence_Cipher_Decode(4,74)&input=e2VhLXZldGdheXRlcmVvcmVoLW5hfWZhbi0td3NoYmVzdHBhc3NsZHMtcy1obQ) and with a bit of expirementation to find the correct Key and Offset, we find our flag;
 
