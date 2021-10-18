@@ -3,15 +3,23 @@
 
 ## Details
 
-> Which employee at De Monne Financial was the target of DEADFACE that resulted in a data leak? Submit the employee's job title as the flag: `flag{Job Title}`
+> A member of DEADFACE suggested that they all meet up at some point. With this information, we'd be able to contact law enforcement to get them all at once! What does the picture say about their meetup location, though?
+> 
+> Submit the flag as: `flag{location}`
+> 
+> Example: `flag{Golden Gate Bridge}`.
+> 
+> [Download image](https://tinyurl.com/ecvks8wu)
 ---
 
-I we look at the gostTown forum we find the folwoijg thread - [https://ghosttown.deadface.io/t/they-got-the-wrong-guy/75](https://ghosttown.deadface.io/t/they-got-the-wrong-guy/75)
+If we download the image we see the following;
 
-Ths thread links to an external news article - [https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation](https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation)
+![image](https://user-images.githubusercontent.com/73170900/137819271-c33acaf2-33b8-4aeb-b314-ade2ed9b6d3d.png)
 
-The title of this article is;
+if we upload the Photo to Google and perfoma a Reverse image serach we see...
 
-> "De Monne **Senior Organizer** On Administrative Leave Pending Data Leak Investigation" 
+![image](https://user-images.githubusercontent.com/73170900/137819407-b21f6055-af3f-4b06-a67c-6175707948fc.png)
 
-## flag{Senior Organizer}
+Therefore th flag is;
+
+## flag{Eastern State Penitentiary}
