@@ -13,11 +13,17 @@
 
 Connect to shell...
 
-Run `ls -R`
-then `cat Documents.flag1.txt`
+Run: `ls -R`
 
 ```
-flag here
+-output from ls command-
+```
+
+
+Then: `cat Documents.flag1.txt`
+
+```
+-flag here-
 ```
 
 ## flag{0h-look-a-FlaG}
