@@ -3,22 +3,15 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>.$)/3<'e-)<e':e&'<e<'e-)<5
+>
+>Submit the flag as flag{here-is-the-answer}
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+This one is fairly straight forward is you use CyberChef. 
+Copy the string in and az\pply the **XOR Brute Force** Recipe. set the Crib(known plain string) to **flag{** and let it do it's magic!
 
+You can see it in action [here](https://gchq.github.io/CyberChef/#recipe=XOR_Brute_Force(1,100,0,'Standard',false,true,false,'flag%7B')&input=LiQpLzM8J2UtKTxlJzplJic8ZTwnZS0pPDU).
+The resulting key is;
 
-print(f'The flag is: ')
-```
-
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
-
-If we change the bottom line of code to `print(get_flag())`
-
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{to-eat-or-not-to-eat}
