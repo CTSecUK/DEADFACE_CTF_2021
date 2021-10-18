@@ -339,7 +339,7 @@ Running the game we see the following;
 
 ![image](https://user-images.githubusercontent.com/73170900/137819708-c5f8ae11-6a91-4f04-bfbb-8f56ce9886e8.png)
 
-![image](https://user-images.githubusercontent.com/73170900/137819744-6f917963-7ea9-4b23-a9ca-5316bd276d78.png)
+![image](https://user-images.githubusercontent.com/73170900/137820285-8534e29f-53f2-4474-be13-42d1c737f449.png)
 
 The idea of the game is to dodge the enemy character which moves faster and faster until you can no longer move quick enough to avoid it!
 
