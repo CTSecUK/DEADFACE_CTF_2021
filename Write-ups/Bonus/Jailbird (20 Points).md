@@ -17,7 +17,7 @@ The thread contains a link to an extenral news article about the arrest of **Don
 
 
 
-Further Down another user (d34th) confirm who Donnel is;
+Further down the GhostTown thread another user (d34th) confirm who Donnel is;
 
 ![image](https://user-images.githubusercontent.com/73170900/137734409-193328ed-e1da-4a2e-9a29-afd836fa5d99.png)
 
