@@ -11,7 +11,18 @@
 
 It should be possible to use the query `SELECT COUNT(DISTINCT(city)) FROM employees;` which produced a count of `450`
 
-But thsi was not the correct flag!?!
+```
+MariaDB [demonne]> select COUNT(DISTINCT(city)) from employees;
++-----------------------+
+| COUNT(DISTINCT(city)) |
++-----------------------+
+|                   450 |
++-----------------------+
+1 row in set (0.008 sec)
+
+```
+
+But this was not the correct flag!?!
 
 When I ran the command without the `COUNT()` function, `SELECT DISTINCT(city) FROM employees;`, I noticed some dupliacte entries in the list?!
 
@@ -479,7 +490,7 @@ Boca Raton       |
 +-------------------+
 ```
 
-I tried for some time to get the SQL query to produce the correct results, but in the end decided it was likley there was some additional whitepasce or strange charcter encoding causing the issues to decided insteed it was easiser to remove the duplicates manually!
+I tried for some time to get the SQL query to provide the correct results, but in the end decided it was likley there was some additional whitepasce or strange charcter encoding causing the issues to decided insteed it was easiser to remove the duplicates manually!
 
 After manualy removing the duplicates from the list above I came up with the corect count of `444`
 
