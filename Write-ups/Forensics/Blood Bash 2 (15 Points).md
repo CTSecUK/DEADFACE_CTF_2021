@@ -29,4 +29,4 @@ Then: `cat Documents/.demone-info.txt`
 -flag here-
 ```
 
-## flag{0h-look-a-FlaG}
+## flag{_____}
