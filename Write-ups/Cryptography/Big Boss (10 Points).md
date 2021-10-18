@@ -3,22 +3,15 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>An anonymous tipster sent us this photo alleging that it's a note written by b3li3f1203. The tipster claims that the note was intended for someone who works at De Monne Financial. They also said it's likely that it has something to do with a phishing campaign. Provide the name of the target individual as the flag in this format: flag{FirstName_LastName}.
+>
+>[Download Image](https://tinyurl.com/4stj3n4t)
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+---
+
+Looking at the image we can see it constains some sort of hand written cipher.
+
+![image](https://user-images.githubusercontent.com/73170900/137735468-e0e9422e-417f-4917-aa48-32c8f7d3bbe2.png)
 
 
-print(f'The flag is: ')
-```
-
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
-
-If we change the bottom line of code to `print(get_flag())`
-
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{________}
