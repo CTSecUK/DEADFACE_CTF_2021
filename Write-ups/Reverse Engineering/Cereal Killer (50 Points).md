@@ -4,22 +4,21 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+> ![image](https://user-images.githubusercontent.com/73170900/137821256-df7966fe-b006-4d14-8b35-a0eab0b2d12f.png)
+>
+> spookyboi is really into Serial Killers. He loves to watch Mindhunter on NetFlix. He can also SLAY a bowl of his favorite cereal.
+> 
+> (Choose either the Windows or Linux binaries to analyze...)
+> 
+> RE01 (Windows)
+> 
+> SHA1: 3674964b75d2894f297470be8a39802af40314b3
+> 
+> RE01 (Linux)
+> 
+> SHA1: af2392a43e3571fa43be6a48a3a83131f549013c
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
 
 
-print(f'The flag is: ')
-```
-
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
-
-If we change the bottom line of code to `print(get_flag())`
-
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{_______}
