@@ -1,4 +1,4 @@
-# The Counr
+# The Count
 
 ![Category](http://img.shields.io/badge/Category-Programming-orange?style=for-the-badge) ![Points](http://img.shields.io/badge/Points-275-brightgreen?style=for-the-badge)
 
