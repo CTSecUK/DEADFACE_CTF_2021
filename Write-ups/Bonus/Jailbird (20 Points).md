@@ -4,6 +4,7 @@
 ## Details
 
 > It looks like authorities arrested a member of DEADFACE. But who was it?
+> 
 > Submit the member's username as the flag: flag{username}
 
 --- 
