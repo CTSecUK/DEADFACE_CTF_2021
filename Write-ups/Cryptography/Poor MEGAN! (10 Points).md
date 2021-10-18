@@ -20,4 +20,4 @@ However you'll notice an Alphabet option, which can be used with the base64 deco
 
 Changing the Alphabet/encoding to this seems allows the base 64 to be decoded! - [Cyberchef](https://gchq.github.io/CyberChef/#recipe=From_Base64('3GHIJKLMNOPQRSTUb%3DcdefghijklmnopWXYZ/12%2B406789VaqrstuvwxyzABCDEF5',true)&input=ajJyWGp4OWRraFc5ZUxLc25NUjljTERWamgvOWR3ejFRZkdYbStiOT13S3NsTDFacGI0NQ)
 
-## flagflag{flag{Six-Parts-Honey-One-Part-Garlic}}
+## flag{flag{Six-Parts-Honey-One-Part-Garlic}}
