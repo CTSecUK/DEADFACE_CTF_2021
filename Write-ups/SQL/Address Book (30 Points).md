@@ -14,7 +14,9 @@ Looking at this thread we see;
 
 ![image](https://user-images.githubusercontent.com/73170900/137784427-54e86b4f-251c-4675-bb14-2d67df2e22b0.png)
 
-We can use this information to query the database for the likely victim. Looking at the `customers` table using teh command `describe customer;` we can see we have teh following information available;
+We can use this information to query the database for the likely victim. 
+
+Looking at the `customers` table using the command `describe customer;` we can see we have the following information available to us;
 
 ```
 MariaDB [demonne]> describe customers;
@@ -51,14 +53,19 @@ MariaDB [demonne]> SELECT * from customers WHERE city = 'Vienna';
 +---------+-----------+------------+---------------------------+------------------------------+--------+-------+---------+--------+--------+------------+
 6 rows in set (0.004 sec)
 ```
-however the thread also mentioned;
+
+However the thread also mentioned;
 > ***She*** lives near the Vienna branch of De Monne 
 
-The only  customer from the above list who is female is;
+The only customer from the above list who is female is;
 ```
++---------+-----------+------------+---------------------------+------------------------------+--------+-------+---------+--------+--------+------------+
+| cust_id | last_name | first_name | email                     | street                       | city   | state | country | postal | gender | dob        |
++---------+-----------+------------+---------------------------+------------------------------+--------+-------+---------+--------+--------+------------+
 |    2574 | Allsopp   | Collen     | callsopp1zh@sbwire.com    | 90360 Red Cloud Crossing     | Vienna | VA    | US      | 22184  | F      | 10/25/1973 |
++---------+-----------+------------+---------------------------+------------------------------+--------+-------+---------+--------+--------+------------+
 ```
 
-sO ARE FLAG IS;
+So the flag is;
 
-## flagflag{Collen Allsopp}
+## flag{Collen Allsopp}
