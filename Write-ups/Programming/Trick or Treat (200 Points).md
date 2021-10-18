@@ -347,7 +347,7 @@ When the characters colide we see;
 
 ![image](https://user-images.githubusercontent.com/73170900/137820203-f28fac95-8e3c-41ab-abd6-e4de8d65cefb.png)
 
-There are several ways to get the flag from this game but we found the easiest was to cheeat the game by editing the above code to remove the colision detection.
+There are several ways to get the flag from this game but we found the easiest was to cheat the game that we found was by editing the above code to remove the colision detection!
 
 This can be done by commenting out the line with a towards the end that reads;
 
