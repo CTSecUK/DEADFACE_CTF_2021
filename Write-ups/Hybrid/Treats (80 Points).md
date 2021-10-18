@@ -8,6 +8,21 @@ Treats
 >Find the flag and submit it as: flag{flag-goes-here}.
 ---
 
+https://ghosttown.deadface.io/t/potential-buyer-in-the-works/82
 
+
+![image](https://user-images.githubusercontent.com/73170900/137755260-63cf46a9-57bc-4295-877c-76ec11e84dda.png)
+
+The string `fkdgcbd7ctdqde5dhysmdgefrjs6ip2zjgiycx5vsdvtpdspmkhi5hid` posted by d34th is tor address
+
+If we add a `.onion` extention and for like so `http:\\fkdgcbd7ctdqde5dhysmdgefrjs6ip2zjgiycx5vsdvtpdspmkhi5hid.onion`, then access in Tor browser we see a website.
+
+This site seems fairly innocuous and most of the links do not work, but looking at the page sorce we can see some linked javascript files.
+
+Examininig thos we see one contains the following...
+
+```
+flag
+```
 
 ## flag{__________________________}
