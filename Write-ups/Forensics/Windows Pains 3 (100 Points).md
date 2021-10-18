@@ -3,22 +3,32 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+One of De Monne's employees had their personal Windows computer hacked by a member of DEADFACE. The attacker managed to exploit a portion of a database backup that contains sensitive employee and customer PII.
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+> Using the [memory dump file](https://tinyurl.com/wcekj3rt) from Window Pains, find out the name of the malicious process.
+>
+> Submit the flag as `flag{process-name_pid}` (include the extension)..
+>
+> Example: `flag{svchost.exe_1234}`
+---
 
 
-print(f'The flag is: ')
+Using Volatility3 we run `sudo python3 vol.py -f physmemraw windows.pstree`
+
+```
+-output here-
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+Next; `sudo python3 vol.py -f physmemraw windows.cmdLine`
 
-If we change the bottom line of code to `print(get_flag())`
+```
+-output here-
+```
 
-Then run the script we get....
+Next; `sudo python3 vol.py -f physmemraw windows.pslist.PsList --pid 8081`
 
-## flagflag{0h-look-a-FlaG}
+```
+-output here-
+```
+
+## flag{userinit.exe_8081}
