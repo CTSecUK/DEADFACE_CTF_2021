@@ -3,22 +3,58 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>There's a flag on this system that we're having difficulty with. Unlike the previous flags, we can't seem to find a file with this flag in it. Perhaps the flag isn't stored in a traditional file?
+>
+> Username: `bl0ody_mary`
+> Password: `d34df4c3`
+>
+> `bloodbash.deadface.io:22`
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+Connect to shell...
 
+Run: `netsat -alnp"`
 
-print(f'The flag is: ')
+```
+-output from nestat command-
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+Note the following line: `cat Documents/.demone-info.txt`
 
-If we change the bottom line of code to `print(get_flag())`
+also note UDP!
 
-Then run the script we get....
+connect via netacat to that port like so.. `nc -u 127.0.0.1 12345`
 
-## flagflag{0h-look-a-FlaG}
+```
+-output from nestat command-
+```
+
+## flag{_____}
+
+another unintended way to find teh flag was as folllows...
+
+Run: `sudo -l"`
+
+`cat /usr/bin/srv`
+
+```
+-Access denied message-
+```
+
+`cat /opt/startup.sh`
+
+```
+-output from cat startup command-
+```
+
+Notice the script executes `/bin/bash` - as root!
+
+`sudo /opt/startup.sh` gives us a root shell
+
+then `cat  /usr/bin/srv`
+
+```
+-contaents of /usr/bin/srv-
+```
+
+Again we can see the flag here!
