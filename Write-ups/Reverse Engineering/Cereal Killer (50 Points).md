@@ -45,7 +45,7 @@ Reading symbols from deadface_re01.bin...
 pwndbg> 
 ```
 
-Running the program we see;
+Running the program we see how it works we see the below;
 
 ```assembly
 pwndbg> run
@@ -56,6 +56,8 @@ Please enter the passphrase: 123
 notflag{you-guessed-it---this-is-not-the-flag}
 [Inferior 1 (process 6160) exited normally]
 ```
+
+Next we dissamble the main fucntion to tray and understand what's hapenning.
 
 ```assembly 
 pwndbg> disassemble main
@@ -112,14 +114,21 @@ Dump of assembler code for function main:
 End of assembler dump.
 ```
 
+We can see here that there is a `cmp` (compare )funtion called.
+
 ```assembly
 0x0000555555555153 <+147>:   cmp    QWORD PTR [rsp+0x20],rax
 ```
+
+Lets set a break point at that compare funtion.
 
 ```
 pwndbg> break *0x0000555555555153
 Breakpoint 1 at 0x555555555153
 ```
+~
+
+Now we runn again...
 
 ```assembly
 pwndbg> run
@@ -178,7 +187,7 @@ LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
 pwndbg> 
 ```
 
-note the line showing the value in the top of the stack when we hit our break point..
+Now, when we hit the break point we set, take note of the line showing the value in the top of the stack at that point!
 
 ```assembly
 00:0000│ rsp 0x7fffffffd7d0 ◂— 'flag{c0unt-ch0cula-cereal-FTW}'
