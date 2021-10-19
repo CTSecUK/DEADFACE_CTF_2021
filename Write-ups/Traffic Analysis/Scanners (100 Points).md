@@ -11,13 +11,13 @@
 > Use the PCAP from LYTTON LABS 01 - Monstrum ex Machina.
 ---
 
-Victim's PC is `192.168.100.103`
+From our previous examinations of the PCAP file we know that the Victim's PC is using the IP address `192.168.100.103`
 
-Luciafer's PC `192.168.100.106`
+And that Luciafer's PC is using the IP Address `192.168.100.106`.
+We can use the following filter to find traffic  between thos IP addresses
+`((ip.src == 192.168.100.103) || (ip.dst == 192.168.100.106)) && ((ip.dst == 192.168.100.103) || (ip.dst == 192.168.100.106))`
 
-We can use the following filter to find traffic `(ip.src == 192.168.100.103) && (ip.dst == 192.168.100.106)`
-
-![image](https://user-images.githubusercontent.com/73170900/137885754-6877e360-d55c-4fb6-917d-39af7588bd7c.png)
+![image](https://user-images.githubusercontent.com/73170900/137887708-d4de1951-feaf-421f-a691-d63df9cc84da.png)
 
 Scrolling through the data we see;
 
