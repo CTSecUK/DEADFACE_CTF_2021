@@ -19,7 +19,9 @@
 > SHA1: af2392a43e3571fa43be6a48a3a83131f549013c
 ---
 
-```
+To solve this challenge we can use gdb (which i use with [pwndbg plug-in](https://github.com/pwndbg/pwndbg))
+
+```assembly
 ❯ gdb deadface_re01.bin
 GNU gdb (GDB) 11.1
 Copyright (C) 2021 Free Software Foundation, Inc.
@@ -45,7 +47,7 @@ pwndbg>
 
 Running the program we see;
 
-```
+```assembly
 pwndbg> run
 Starting program: /home/jaxigt/Downloads/deadface_re01.bin 
 ERROR: Could not find ELF base!
