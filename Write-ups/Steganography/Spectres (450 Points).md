@@ -14,7 +14,7 @@
 
 Apprently the challenge author had intended this challenge to be much harder, requiring a custom script/program to analyse the image pixel bv pixel, but actually this was easily solved using `stesolve`.
 
-Viewing the `Gray Bits` layer we can clearley see the flag;
+Viewing the `Gray Bits` layer using this tool, we can clearly see the flag;
 
 ![image](https://user-images.githubusercontent.com/73170900/137827168-6da59ec9-4c3a-452b-a008-d59bac25a459.png)
 
