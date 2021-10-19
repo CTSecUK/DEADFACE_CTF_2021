@@ -3,22 +3,28 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+> What could be inside this creepy rabbit?
+> 
+> [Download image](https://tinyurl.com/4csyne6s)
+> 
+> SHA1: 7ab2d9b1986ae12b780d0a2124a3adce6ed4c4e1
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+![image](https://user-images.githubusercontent.com/73170900/137825375-e75747fb-09a6-4ac8-b1b7-51b38d2c5018.png)
 
+If we run `steghide` agains the image using a `blank` password...
 
-print(f'The flag is: ')
+```bash
+❯ steghide extract -sf  bunny.jpg
+Enter passphrase: 
+wrote extracted data to "steganopayload730241.txt".
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+We can see that it ecxtracts some information!
 
-If we change the bottom line of code to `print(get_flag())`
+```bash
+❯ cat steganopayload730241.txt
+flag{Carr0t}
+```
 
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{Carr0t}
