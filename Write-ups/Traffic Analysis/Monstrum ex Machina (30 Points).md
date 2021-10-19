@@ -18,7 +18,7 @@ We open the packet Capture in wireshark and filetr by `HTTP` traffic
 
 ![image](https://user-images.githubusercontent.com/73170900/137827880-bf2cba4b-d515-4b2a-82b2-d376a2727238.png)
 
-Scrolling down through the packets we wsee the following;
+Scrolling down through the packets we see the following;
 
 ![image](https://user-images.githubusercontent.com/73170900/137827708-f7015399-4bde-4588-9db2-1e3b645c6692.png)
 
