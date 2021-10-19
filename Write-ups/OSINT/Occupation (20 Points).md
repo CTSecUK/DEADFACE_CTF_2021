@@ -10,7 +10,7 @@ I we look at the GhostTown forum we find the following thread - [https://ghostto
 
 Ths thread links to an external news article - [https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation](https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation)
 
-A quick google searchj of the employee in questioin brings up his linkedin page [https://www.linkedin.com/in/jimmie-castora-7a6170220/](https://www.linkedin.com/in/jimmie-castora-7a6170220/) where we can see his job Title... `Senior Directives Organizer`
+A quick google searchj of the employee mentioned in the article `Jimmie Castora` brings up his linkedin page [https://www.linkedin.com/in/jimmie-castora-7a6170220/](https://www.linkedin.com/in/jimmie-castora-7a6170220/) where we can see his job Title... `Senior Directives Organizer`
 
 
 ## flag{Senior Directives Organizer}
