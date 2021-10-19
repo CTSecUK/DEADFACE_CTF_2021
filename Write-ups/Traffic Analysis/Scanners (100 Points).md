@@ -19,11 +19,13 @@ We can use the following filter to find traffic  between thos IP addresses
 
 ![image](https://user-images.githubusercontent.com/73170900/137887708-d4de1951-feaf-421f-a691-d63df9cc84da.png)
 
-Scrolling through the data we see;
+Scrolling through the data we see traffic on many different ports.
 
 ![image](https://user-images.githubusercontent.com/73170900/137885534-8ddd29f2-3350-4bdb-9ff0-a0e1b3dee0e0.png)
 
-taking a closer look at one of the open port responses we can see;
+The Red packets are ones where the port is closed, the grey packets we can see show the victioms PC responding to the port scan to say tha the port is open
+
+Taking a closer look at one of open port responses we can see;
 
 ![image](https://user-images.githubusercontent.com/73170900/137886001-a7c6c7e4-9c9d-4d2b-95ab-5c299a959a3e.png)
 
@@ -31,7 +33,7 @@ Note the `Flags: 0x012 (SYN,ACK)`
 
 We can add a filter for this flag like so `tcp.flags == 0x012` .
 
-If we add this to our previous filter we will see all the  SYN,ACK responses from the Victims PC sent to Luciafer's PC/
+We change our previous filter to olny show the SYN,ACK responses from the Victims PC sent to Luciafer's PC/
 
 `(ip.src == 192.168.100.103) && (ip.dst == 192.168.100.106) && (tcp.flags == 0x012)`
 
