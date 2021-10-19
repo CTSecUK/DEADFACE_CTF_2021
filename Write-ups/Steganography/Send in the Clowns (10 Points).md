@@ -19,4 +19,21 @@ If we run the strings command against the file...
 
 We see the flag;
 
+```
+❯ strings -n 12 steg02.jpg
+http://ns.adobe.com/xap/1.0/
+<?xpacket begin='
+' id='W5M0MpCehiHzreSzNTczkc9d'?>
+<x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Image::ExifTool 12.16'>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+ <rdf:Description rdf:about=''
+  xmlns:prism='http://prismstandard.org/namespaces/basic/2.0/'>
+  <prism:wordCount>1</prism:wordCount>
+ </rdf:Description>
+</x:xmpmeta>
+<?xpacket end='w'?>
+flag{s3nd_in_the_kl0wns}
+❯ strings -n 12 steg02.jpg
+```
+
 ## flag{s3nd_in_the_kl0wns}
