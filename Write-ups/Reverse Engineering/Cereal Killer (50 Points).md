@@ -19,7 +19,7 @@
 > SHA1: af2392a43e3571fa43be6a48a3a83131f549013c
 ---
 
-To solve this challenge we can use gdb (which i use with [pwndbg plug-in](https://github.com/pwndbg/pwndbg))
+To solve this challenge we can use `gdb` (which i like to use with [pwndbg plug-in](https://github.com/pwndbg/pwndbg))
 
 ```assembly
 ❯ gdb deadface_re01.bin
@@ -57,7 +57,7 @@ notflag{you-guessed-it---this-is-not-the-flag}
 [Inferior 1 (process 6160) exited normally]
 ```
 
-Next we dissamble the main fucntion to tray and understand what's hapenning.
+Next we dissamble the main fucntion to try and understand what's hapenning.
 
 ```assembly 
 pwndbg> disassemble main
@@ -114,7 +114,7 @@ Dump of assembler code for function main:
 End of assembler dump.
 ```
 
-We can see here that there is a `cmp` (compare )funtion called.
+We can see here that there is a `cmp` (compare) funtion called.
 
 ```assembly
 0x0000555555555153 <+147>:   cmp    QWORD PTR [rsp+0x20],rax
@@ -128,7 +128,7 @@ Breakpoint 1 at 0x555555555153
 ```
 ~
 
-Now we runn again...
+Now we run again...
 
 ```assembly
 pwndbg> run
@@ -187,7 +187,7 @@ LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
 pwndbg> 
 ```
 
-Now, when we hit the break point we set, take note of the line showing the value in the top of the stack at that point!
+Now, when we hit the break point that we set, take note of the line showing the value in the top of the stack at that point!
 
 ```assembly
 00:0000│ rsp 0x7fffffffd7d0 ◂— 'flag{c0unt-ch0cula-cereal-FTW}'
