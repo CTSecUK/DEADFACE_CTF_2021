@@ -3,22 +3,29 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+> Our person on the "inside" of Ghost Town was able to plant a packet sniffing device on Luciafer's computer. Based on our initial analysis, we know that she was attempting to hack a computer in Lytton Labs, and we have some idea of what she was doing, but we need a more in-depth analysis. This is where YOU come in.
+> 
+> We need YOU to help us analyze the packet capture. Look for relevant data to the potential attempted hack.
+> 
+> To gather some information on the victim, investigate the victim's computer activity. The "victim" was using a search engine to look up a name. Provide the name with standard capitalization: `flag{Jerry Seinfeld}`.
+> 
+> [Download file](https://tinyurl.com/35a45kc3)
+> 
+> SHA1: 6c0caf366dae3e03bcbd7338de0030812536894c
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+We open the packet Capture in wireshark and filetr by `HTTP` traffic
 
+![image](https://user-images.githubusercontent.com/73170900/137827880-bf2cba4b-d515-4b2a-82b2-d376a2727238.png)
 
-print(f'The flag is: ')
-```
+Scrolling down through the packets we wsee the following;
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+![image](https://user-images.githubusercontent.com/73170900/137827708-f7015399-4bde-4588-9db2-1e3b645c6692.png)
 
-If we change the bottom line of code to `print(get_flag())`
+If we `Follow the HTTP Stream` for this packet we can see;
 
-Then run the script we get....
+![image](https://user-images.githubusercontent.com/73170900/137827784-86b1adbe-792f-4f2e-a58d-d664c27fa9e1.png)
 
-## flagflag{0h-look-a-FlaG}
+Therefore the flag is;
+
+## flag{Charles Geschickter}
