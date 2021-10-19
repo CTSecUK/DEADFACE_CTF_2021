@@ -357,6 +357,6 @@ This can be done by commenting out the line with a towards the end that reads;
 #get_intersect(x, enemy.eX, player.img.get_rect().size[0], enemy.eW, y, enemy.eY, enemy.eH)
 ```
 
-If we run the game again, the enemey charcter will never colide and after a short time, you will see in the terminal (where the ghame was launched) the string;
+If we run the game again, the enemey charcter will never colide and after a short time, you will see in the terminal (where the game was launched) the string;
 
 ## flag{CaNT_ch34t_d34th}
