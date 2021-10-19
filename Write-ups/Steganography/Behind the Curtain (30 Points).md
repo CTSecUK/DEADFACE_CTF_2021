@@ -3,22 +3,21 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>This image was intercepted from Ghost Town. We think Donnell has hidden information here, but there doesn't seem to be anything special about the image. Can you help find the hidden information? Submit the flag as flag{this-is-the-flag}.
+>
+> [Link to Image](https://tinyurl.com/26fd4pbs)
+>
+> SHA1: 29141eea42be29f8fa28a9a1cc5e5118e63577b2
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+![image](https://user-images.githubusercontent.com/73170900/137825556-75e94d11-ff2b-4df5-ac72-0cf99602819d.png)
 
+If we open the image in `stegsolve` and select the `Frame Browser` analysis tool... 
 
-print(f'The flag is: ')
-```
+![image](https://user-images.githubusercontent.com/73170900/137826033-51428bda-b39f-4ca2-a983-c572f13866ca.png)
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+We can sse a second image on frame 2!
 
-If we change the bottom line of code to `print(get_flag())`
+![image](https://user-images.githubusercontent.com/73170900/137826183-db88b870-fa8c-4671-97a4-7765afb624ad.png)
 
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{L3t_m3_in}
