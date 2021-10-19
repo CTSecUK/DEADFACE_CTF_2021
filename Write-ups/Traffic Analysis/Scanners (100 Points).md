@@ -23,7 +23,7 @@ Scrolling through the data we see traffic on many different ports.
 
 ![image](https://user-images.githubusercontent.com/73170900/137885534-8ddd29f2-3350-4bdb-9ff0-a0e1b3dee0e0.png)
 
-The Red packets are ones where the port is closed, the grey packets we can see show the victioms PC responding to the port scan to say tha the port is open
+In this screenshot, the red packets are ones where the port is closed, the grey packets we can see show the victims PC responding to the port scan to say that the port is open!
 
 Taking a closer look at one of open port responses we can see;
 
