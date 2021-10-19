@@ -11,9 +11,11 @@
 >Use the PCAP from LYTTON LABS 01 - Monstrum ex Machina.
 ---
 
+First we try a search for the string warning.
 
 ![image](https://user-images.githubusercontent.com/73170900/137890897-29275efb-6734-44db-bbfc-64bfb414d9a7.png)
 
+The first result that comes up is this
 ![image](https://user-images.githubusercontent.com/73170900/137890995-823148ad-e65c-43a9-a682-c74a529628c8.png)
 
 ![image](https://user-images.githubusercontent.com/73170900/137891037-48afe2a6-ef20-47d9-b54c-c2bd78250e7e.png)
