@@ -3,22 +3,20 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+> There is a secret hidden somewhere in this image. Can you find it? Submit the flag as flag{this-is-the-flag}.
+> 
+> [Link to Image](https://tinyurl.com/y9xjz7b4)
+> SHA1: 74eaae618bf508ef2715533bfdff3153dd996e89
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+![image](https://user-images.githubusercontent.com/73170900/137825074-87f2d016-0ba4-4764-8526-bf297b3b8e89.png)
 
+If we run the strings command against the file...
 
-print(f'The flag is: ')
+```bash
+❯ strings -n 12 steg02.jpg
 ```
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+We see the flag;
 
-If we change the bottom line of code to `print(get_flag())`
-
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{s3nd_in_the_kl0wns}
