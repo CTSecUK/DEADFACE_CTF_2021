@@ -3,22 +3,21 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+>A friend of mine sent me an audio file which supposes to tell me the time of our night out meeting, but I can't comprehend the voice in the audio file. Can you help me figure it out? I want to hang out with my friends.
+> 
+> [Download file](https://tinyurl.com/2sa56kbk)
+> 
+> SHA1:3173700e9ba2f062a18707b375fac61049310413
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+If we downlaod the wave audo file and open in Sonic-Visualiser
 
+Next go to the `Transform` menu and `Add Spectogram` for all channels.
 
-print(f'The flag is: ')
-```
+![image](https://user-images.githubusercontent.com/73170900/137826761-195775d0-00b2-4d0c-bfd5-010bcb7b377b.png)
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+One we do this and zoon in a littl;e we can see a flag hidden in the spectogram.
 
-If we change the bottom line of code to `print(get_flag())`
+![image](https://user-images.githubusercontent.com/73170900/137826675-be9855ec-3c1d-4acd-9cbf-e26e3b403dec.png)
 
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{1257}
