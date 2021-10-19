@@ -6,7 +6,7 @@
 > Which employee at De Monne Financial was the target of DEADFACE that resulted in a data leak? Submit the employee's job title as the flag: `flag{Job Title}`
 ---
 
-I we look at the gostTown forum we find the folwoijg thread - [https://ghosttown.deadface.io/t/they-got-the-wrong-guy/75](https://ghosttown.deadface.io/t/they-got-the-wrong-guy/75)
+I we look at the GhostTown forum we find the following thread - [https://ghosttown.deadface.io/t/they-got-the-wrong-guy/75](https://ghosttown.deadface.io/t/they-got-the-wrong-guy/75)
 
 Ths thread links to an external news article - [https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation](https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation)
 
