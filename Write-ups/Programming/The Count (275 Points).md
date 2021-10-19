@@ -50,10 +50,10 @@ def get_letter_value(letter):
 TCP_IP = 'code.deadface.io'
 TCP_PORT = 50000
 BUFFER_SIZE = 1024
-#MESSAGE = "Hello, World!"
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((TCP_IP, TCP_PORT))
-#s.send(MESSAGE)
+
 data = s.recv(BUFFER_SIZE)
 
 challenge = data.split()
