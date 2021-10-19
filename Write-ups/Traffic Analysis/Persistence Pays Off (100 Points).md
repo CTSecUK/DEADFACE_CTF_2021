@@ -11,15 +11,15 @@
 > Use the PCAP file from Monstrum ex Machina.
 ---
 
-We'll start the point where Luciafer downloaded the `Secret-decoder.bin` file, by filtering for `ftp-data` and locating teh packet
+We'll start the point where Luciafer downloaded the `Secret-decoder.bin` file, by filtering for `ftp-data` and locating the packet.
 
 ![image](https://user-images.githubusercontent.com/73170900/137892623-838996d1-5188-44d1-8bbd-f48a91ab507a.png)
 
-Then when we clear the `ftp-data` filter we still have the same packets selected in the packet list.
+Then, when we clear the `ftp-data` filter we will still have the same packet selected in the packet capture file.
 
-Now if we start scrolling through the packets below, we can see what ahppend after she downloaded it.
+Now if we start scrolling through the packets below this, we can see what happened after the file was downloaded.
 
-Not too much further down at packet number `160404` we can see some form `TCP` packets.
+Not too much further down at packet number `160404` we can see some `TCP` packets.
 
 ![image](https://user-images.githubusercontent.com/73170900/137893318-69e08c0b-a763-43a9-b0b3-f8dbde61d2ab.png)
 
@@ -33,11 +33,11 @@ In particular we can see the following line where the attacker a cron job is bei
 sudo /bin/bash -c "echo '*/5 * * * * root /usr/bin/ll-connect.bin' > /etc/cron.d/da-ll-backup-job"
 ```
 
-We can see this happening in packet number `160468`
+Closing the TCP stream, we can see this happening in packet number `160468`
 
 ![image](https://user-images.githubusercontent.com/73170900/137893762-9b1fb949-36a3-477a-bfb7-fdd6ad9d8e80.png)
 
-Therfore aour flag is;
+Therfore our flag is;
 
 ## flag{160468}
 
