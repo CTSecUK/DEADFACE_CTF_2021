@@ -3,22 +3,19 @@
 
 ## Details
 
-```python
-#!/usr/bin/env python3
-from binascii import unhexlify as u
+> We intercepted this image from a suspected insider threat at De Monne Financial. It looks like parts of the image were cut out, but based on conversations between DEADFACE and the insider, we believe DEADFACE's wallet address is hidden in this image.
+> 
+> [Download image](https://tinyurl.com/yp5ttjzt)
+> 
+> SHA1: e972d295c2624d3e33ab23c48587b916d6693320
+---
 
-def get_flag():
-    flag = '666c61677b30682d6c6f6f6b2d612d466c61477d'
-    return u(flag).decode('utf-8')
+![image](https://user-images.githubusercontent.com/73170900/137826979-3d43b912-3365-47ec-b02c-398a0186c873.png)
 
+Apprently the challenge author had intended this challenge to be much harder, requiring a custom script/program to analyse the image pixel bv pixel, but actually this was easily solved using `stesolve`.
 
-print(f'The flag is: ')
-```
+Viewing the `Gray Bits` layer we can clearley see the flag;
 
-At the moment this code never calls the **get_flag()** funtion. it just defines it.
+![image](https://user-images.githubusercontent.com/73170900/137827168-6da59ec9-4c3a-452b-a008-d59bac25a459.png)
 
-If we change the bottom line of code to `print(get_flag())`
-
-Then run the script we get....
-
-## flagflag{0h-look-a-FlaG}
+## flag{I_s33_d34d_ppl}
