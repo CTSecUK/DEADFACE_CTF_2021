@@ -10,8 +10,7 @@ I we look at the gostTown forum we find the folwoijg thread - [https://ghosttown
 
 Ths thread links to an external news article - [https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation](https://www.worldgreynews.com/details/168914/de-monne-senior-organizer-on-administrative-leave-pending-data-leak-investigation)
 
-The title of this article is;
+A quick google searchj of the employee in questioin brings up his linkedin page [https://www.linkedin.com/in/jimmie-castora-7a6170220/](https://www.linkedin.com/in/jimmie-castora-7a6170220/) where we can see his job Title... `Senior Directives Organizer`
 
-> "De Monne **Senior Organizer** On Administrative Leave Pending Data Leak Investigation" 
 
-## flag{Senior Organizer}
+## flag{Senior Directives Organizer}
